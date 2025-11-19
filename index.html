@@ -1,0 +1,85 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreakBoard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap">
+    <script src="https://kit.fontawesome.com/0e892ca3c7.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <main>
+
+        <div class="home-page">
+            <h1 class="title">Habits</h1>
+
+            <div class="week">
+                <div class="day"><p>Mon</p><input type="radio" name="day"></div>
+                <div class="day"><p>Tue</p><input type="radio" name="day"></div>
+                <div class="day"><p>Wed</p><input type="radio" name="day"></div>
+                <div class="day"><p>Thu</p><input type="radio" name="day"></div>
+                <div class="day"><p>Fri</p><input type="radio" name="day"></div>
+                <div class="day"><p>Sat</p><input type="radio" name="day"></div>
+                <div class="day"><p>Sun</p><input type="radio" name="day"></div>
+            </div>
+
+            <div class="habit-container">
+                <i class="fa-solid fa-rocket"></i>
+                <p>No habits to show</p>
+                <button class="add-habit">Press here to add new habits</button>
+            </div>
+        </div>
+        
+        <!--------------------------Home page--------------------------->
+
+
+        <div class="add-habit-page">
+            <button class="home-button"><i class="fa-solid fa-house"></i></button>
+
+            <div class="add-habit-page-container">
+
+                <div class="habit-type">
+                    <p>Choose Habit Type:</p>
+
+                    <div class="habit-type-container">
+                        <input type="radio" name="habit-type" value="build" id="build">
+                        <label for="build">Build Habit</label>
+
+                        <input type="radio" name="habit-type" value="quit" id="quit">
+                        <label for="quit">Quit Habit</label>
+                    </div>
+                </div>
+
+
+                <input id="habit-name" type="text" placeholder="Enter habit name">
+                
+
+                <div class="habit-frequency">
+                    <p>How often do you want to practice this habit?</p>
+                    <label>
+                        <input type="radio" name="frequency" value="everyday"> Everyday
+                    </label>
+                    <label>
+                        <input type="radio" name="frequency" value="weekdays"> Weekdays
+                    </label>
+                    <label>
+                        <input type="radio" name="frequency" value="weekends"> Weekends
+                    </label>
+            </div>
+        </div>
+    
+
+
+
+
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
