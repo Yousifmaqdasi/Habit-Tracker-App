@@ -40,7 +40,7 @@
 
 
         <div class="add-habit-page">
-            <button class="home-button"><i class="fa-solid fa-house"></i></button>
+            <button class="home-button"><i class="fa-solid fa-angle-left" style="color: #ffffff;"></i></button>
 
             <div class="add-habit-page-container">
 
@@ -49,15 +49,42 @@
 
                     <div class="habit-type-container">
                         <input type="radio" name="habit-type" value="build" id="build">
-                        <label for="build">Build Habit</label>
+                        <label class="build-habit" for="build">Build Habit</label>
 
                         <input type="radio" name="habit-type" value="quit" id="quit">
-                        <label for="quit">Quit Habit</label>
+                        <label class="quit-habit" for="quit">Quit Habit</label>
+                    </div>
+                </div>
+                
+                <div class="recommended-habits">
+                    
+                    <div class="recommended-habits-build">
+                        <p>Recommended Habits To Build</p>
+                        <button class="habit-build-btn"><span class="habit-emoji">🚶‍♂️</span> Walk</button>
+                        <button class="habit-build-btn"><span class="habit-emoji">💧</span> Drink Water</button>
+                        <button class="habit-build-btn"><span class="habit-emoji">🏋️‍♂️</span> Exercise</button>
+                        <button class="habit-build-btn"><span class="habit-emoji">😴</span> Sleep</button>
+                        <button class="habit-build-btn"><span class="habit-emoji">🧘‍♂️</span> Meditation</button>
+                        <button class="habit-build-btn"><span class="habit-emoji">📚</span> Read A Book</button>
+                        <button class="habit-build-btn"><span class="habit-emoji">📝</span> Journal</button>
+                        <button class="habit-build-btn"><span class="habit-emoji">🤸‍♂️</span> Stretch</button>
+                    </div>
+
+                    <div class="recommended-habits-quit">
+                        <p>Recommended Habits To Quit</p>
+                        <button class="habit-quit-btn"><span class="habit-emoji">🚭</span> Quit Smoking</button>
+                        <button class="habit-quit-btn"><span class="habit-emoji">📱</span> Late Scrolling</button>
+                        <button class="habit-quit-btn"><span class="habit-emoji">🍔</span> Fast Food</button>
+                        <button class="habit-quit-btn"><span class="habit-emoji">🍺</span> Cut Out Alcohol</button>
+                        <button class="habit-quit-btn"><span class="habit-emoji">⏳</span> Procrastinating</button>
+                        <button class="habit-quit-btn"><span class="habit-emoji">🍰</span> Binge Eating</button>
+                        <button class="habit-quit-btn"><span class="habit-emoji">💳</span> Overspending</button>
+                        <button class="habit-quit-btn"><span class="habit-emoji">🥤</span> Energy Drinks</button>
                     </div>
                 </div>
 
-
-                <input id="habit-name" type="text" placeholder="Enter habit name">
+                
+                <!--------Add small popup screen for quantity such as ml, steps, kg, etc------>
                 
 
                 <div class="habit-frequency">

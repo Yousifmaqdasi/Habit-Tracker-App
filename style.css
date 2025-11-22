@@ -52,6 +52,7 @@ input[type="radio"]{
     font-size: 2rem;
     outline: none;
     transform: scale(1.6);
+    cursor: pointer;
 }
 
 .habit-container{
@@ -69,6 +70,7 @@ input[type="radio"]{
     background-color: var(--color-surface);
     padding: 2rem;
     border-radius: 5rem;
+    cursor: pointer;
 }
 
 .habit-container button{
@@ -93,17 +95,18 @@ input[type="radio"]{
     transform: scale(0.95);
 }
 
-/* .add-habit-page{
+.add-habit-page{
     display: none;
-} */
+}
 
 .home-button{
     border: none;
     cursor: pointer;
-    font-size: 30px;
+    font-size: 1.75rem;
     color: var(--color-text);
     background-color: var(--color-bg);
     transition: 0.25s all ease-in-out;
+    margin: 1.5rem;
 }
 
 .home-button:hover{
@@ -125,7 +128,6 @@ input[type="radio"]{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 3rem;
     gap: 3rem;
 }
 
@@ -136,40 +138,110 @@ input[type="radio"]{
     text-align: center;
 }
 
+.habit-type p{
+    font-weight: bold;
+    font-size: 1.15rem;
+}
+
 .habit-type-container{
     display: flex;
-    box-shadow: 1px 1px 12px #5677ed;
-    padding: 1.5rem 2.5rem;
-    gap: 1rem;
-    border-radius: 8px;
+    border-radius: 3rem;
     margin-top: 1rem;
 }
 
 .habit-type-container input{
     display: none;
-    
 }
 
 .habit-type-container label{
     cursor: pointer;
 }
 
+.build-habit, .quit-habit{
+    width: 6rem;
+    padding: 0.8rem;
+    border-radius: 1rem 0 0 1rem;
+    background-color: #4a90e2;
+    transition: 0.3s all ease-in-out;
+    font-size: 0.85rem;
+}
 
+.quit-habit{
+    border-radius: 0 1rem 1rem 0;
+    background-color: #E24A36;
+}
 
+.build-habit:hover{
+    background-color: #3280daf4;
+}
 
-
-
+.quit-habit:hover{
+    background-color: #e14631e8;
+}
 
 #habit-name{
     border: none;
-    padding: 0.7rem 8rem 0.7rem 0.4rem;
+    padding: 0.75rem 5rem 0.75rem 0.75rem;
     text-align: start;
     outline: none;
-    border-radius: 8px;
-    background-color: #5677ed;
-    color: white;
+    border-radius: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: var(--color-bg);
 }
 
 #habit-name::placeholder{
-    color: white;
+    color: var(--color-bg);
+}
+
+.recommended-habits{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recommended-habits p{
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+.recommended-habits-build, .recommended-habits-quit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.85rem;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.recommended-habits-quit{
+    display: none;
+}
+
+.habit-build-btn, .habit-quit-btn{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 0.4rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.880);
+    cursor: pointer;
+}
+
+.habit-build-btn:hover, .habit-quit-btn:hover{
+    background-color: rgba(255, 255, 255, 0.780);
+    transition: 0.35s all ease-in-out;
+}
+
+.habit-build-btn:active, .habit-quit-btn:active{
+    background-color: rgba(255, 255, 255, 0.700);
+    transform: scale(0.95);
+    transition: 0.15s all ease-in-out;
+}
+
+.habit-emoji{
+    font-size: 1.15rem;
+    margin-right: 0.35rem;
 }
